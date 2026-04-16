@@ -1,12 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Café Serenity | 落ち着いたひとときを</title>
+    <style>
+        /* 基本設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            color: #4a4238; /* 濃い目のブラウン */
+            background-color: #f9f7f2; /* 柔らかなベージュ */
+            line-height: 1.8;
+        }
+
+        /* ヘッダー */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=2000') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            letter-spacing: 0.2em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+        }
+
+        /* セクション共通 */
+        section {
+            padding: 100px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 15px;
+            font-weight: 400;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 1px;
+            background-color: #a68b6d;
+        }
+
+        /* コンテンツ */
+        .intro-text {
+            margin-bottom: 60px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .menu-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 2px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+
+        /* フッター */
+        footer {
+            background-color: #4a4238;
+            color: #f9f7f2;
+            padding: 50px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer-info {
+            margin-bottom: 20px;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 600px) {
+            .header-content h1 { font-size: 2rem; }
+            section { padding: 60px 20px; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This is my first GitHub Pages deployment!</p>
+
+    <header>
+        <div class="header-content">
+            <h1>Café Serenity</h1>
+            <p>穏やかな時間が流れる、大人のための空間</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Concept</h2>
+        <div class="intro-text">
+            <p>ダミーテキストです。落ち着いた空間の中で、厳選された豆を使用したコーヒーをお楽しみいただけます。日常の喧騒を忘れ、心地よい音楽とともに。ダミーテキストです。ダミーテキストです。ダミーテキストです。</p>
+            <p>ダミーテキストです。季節に合わせたスイーツや、こだわりの軽食もご用意しております。一人での読書や、大切な人との語らいのひとときに。ダミーテキストです。ダミーテキストです。</p>
+        </div>
+    </section>
+
+    <section id="menu" style="background-color: #f1ede4;">
+        <h2>Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Specialty Coffee</h3>
+                <p>ダミーテキストです。独自の焙煎技術で仕上げた香り高い一杯です。 ￥600</p>
+            </div>
+            <div class="menu-item">
+                <h3>Seasonal Tea</h3>
+                <p>ダミーテキストです。季節のフルーツを使用した芳醇な香りの紅茶です。 ￥650</p>
+            </div>
+            <div class="menu-item">
+                <h3>Homemade Cake</h3>
+                <p>ダミーテキストです。素材の味を活かした、甘さ控えめのケーキです。 ￥550</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <h2>Information</h2>
+        <p>東京都〇〇区〇〇町 1-2-3</p>
+        <p>Open: 10:00 - 19:00 / Closed: Wednesday</p>
+        <p>Tel: 00-0000-0000</p>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2026 Café Serenity. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
